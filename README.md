@@ -1,8 +1,4 @@
-# purview-early-case-assessment-process
-Detailed view of early case assessment process and workflow in the Purview environment
-
-```markdown
-# Robust Data Validation and Defensible Chain of Custody Pipeline
+readme_markdown = """# Robust Data Validation and Defensible Chain of Custody Pipeline
 
 This repository contains the complete technical specifications, architectural designs, and implementation standards for building production-grade data pipelines using **Pydantic V2** and **Microsoft Purview (KQL)**. It details how to ingest complex, nested datasets from Microsoft 365, validate them under strict compliance constraints, and generate defensible, cryptographically bound audit logs for legal admissibility (Early Case Assessment & Culling).
 
@@ -133,7 +129,7 @@ class AttachmentParser(BaseModel):
 ### The Cryptographic Loop
 To satisfy judicial requirements for computer-generated evidence, we prove that the output of our parsing engine matches the ingestion source bit-for-bit. We achieve this by calculating and matching SHA-256 hashes of the raw input and canonical serialized output:
 
-$$\text{Ingestion SHA-256 Hash} \equiv \text{Canonical Exported SHA-256 Hash}$$
+$$\\text{Ingestion SHA-256 Hash} \\equiv \\text{Canonical Exported SHA-256 Hash}$$
 
 ### In-Place Culling & Query Binding
 When executing in-place culling within Microsoft Purview, records are removed before extraction. To prove that these records were not maliciously deleted, we cryptographically bind the **KQL Query Filter** directly to the **Dataset Payload**. This results in an unbreakable, unified Ingestion Receipt Signature:
@@ -170,4 +166,6 @@ This processes the certified receipt schemas and outputs a defensible PDF artifa
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
-```
+"""
+
+print(readme_markdown)
