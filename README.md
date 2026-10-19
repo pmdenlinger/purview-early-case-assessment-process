@@ -1,6 +1,12 @@
 
  # Robust Data Validation and Defensible Chain of Custody Pipeline
 
+ ![Python 3.13](https://img.shields.io/badge/Python-3.13-blue?logo=python)
+![Pydantic V2](https://img.shields.io/badge/Pydantic-V2-e92063?logo=pydantic)
+![Package Manager: uv](https://img.shields.io/badge/managed%20with-uv-purple)
+![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)
+
+
 This repository contains the complete technical specifications, architectural designs, and implementation standards for building production-grade data pipelines using **Pydantic V2** and **Microsoft Purview (KQL)**. It details how to ingest complex, nested datasets from Microsoft 365, validate them under strict compliance constraints, and generate defensible, cryptographically bound audit logs for legal admissibility (Early Case Assessment & Culling).
 
 ---
